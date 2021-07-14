@@ -1,11 +1,11 @@
 #Makefile
-all: Byte-Order
+all: add-nbo
 
-Byte-Order: ordering.o
+add-nbo: ordering.o
 	g++ -o ordering ordering.o
 
 ordering.o: ordering.cpp
 
 clean:
-	rm -f Byte-Order
+	rm -f add-nbo
 	rm -f *.o
